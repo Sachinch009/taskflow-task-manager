@@ -6,7 +6,7 @@ import { toast, ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 
 import { INPUTWRAPPER, BUTTON_CLASSES } from '../assets/dummy'
-
+import { API_URL } from "../config/api"
 // Dummy data and repeated CSS
 const INITIAL_FORM = { email: "", password: "" }
 
@@ -16,7 +16,7 @@ const Login = ({ onSubmit, onSwitchMode }) => {
   const [rememberMe, setRememberMe] = useState(false)
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
-  const url = "http://localhost:4000"
+  const url = API_URL
 
   // Auto-login
   useEffect(() => {

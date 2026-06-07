@@ -3,9 +3,8 @@ import axios from "axios"
 import { UserPlus } from "lucide-react"
 
 import { Inputwrapper, FIELDS, BUTTONCLASSES, MESSAGE_SUCCESS, MESSAGE_ERROR } from '../assets/dummy'
-
+import { API_URL } from "../config/api"
 // Dummy & Constants
-const API_URL = "http://localhost:4000"
 const INITIAL_FORM = { name: "", email: "", password: "" }
 
 const SignUp = ({ onSwitchMode }) => {
