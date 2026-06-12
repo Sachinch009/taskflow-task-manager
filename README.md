@@ -59,39 +59,44 @@ A modern full-stack task management application built using React, Node.js, Expr
 ---
 
 ## Architecture
-Frontend (React + Vite)
-↓
-Backend (Node.js + Express)
-↓
-MongoDB Atlas
 
----
+```text
+Frontend (React + Vite)
+          │
+          ▼
+Backend (Node.js + Express)
+          │
+          ▼
+MongoDB Atlas
+```
 
 ## Project Structure
 
+```text
 TaskFlow/
 │
 ├── frontend/
-│ ├── src/
-│ ├── public/
-│ ├── Dockerfile
-│ └── package.json
+│   ├── src/
+│   ├── public/
+│   ├── Dockerfile
+│   └── package.json
 │
 ├── backend/
-│ ├── controllers/
-│ ├── middleware/
-│ ├── models/
-│ ├── routes/
-│ ├── config/
-│ ├── Dockerfile
-│ ├── .dockerignore
-│ └── server.js
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── config/
+│   ├── Dockerfile
+│   ├── .dockerignore
+│   └── server.js
+│
+├── screenshots/
 │
 ├── docker-compose.yml
 ├── README.md
 └── .gitignore
-
----
+```
 
 ## Local Installation
 ### Clone Repository
